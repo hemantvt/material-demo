@@ -1,28 +1,27 @@
-<form  [formGroup] ="empservice.form" >
-  <mat-grid-list cols="2" rowheight="300px" >
-<mat-grid-tile>
-<div>
-  <input type="hidden" formContolName="$key" >
+<form [formGroup]="empservice.form" class="normal-form">
+  <mat-grid-list cols="2" rowHeight="300px">
+    <mat-grid-tile>
+      <div class="controles-container">
+        <input type="hidden" formControlName="$key">
+        <mat-form-field>
+          <input formControlName="fullName" matInput placeholder="Full Name*">
 
-</div>
-<mat-form-field>
-  <input formContolName="fullname" matinput placeholder="First Name" >
-</mat-form-field>
-<mat-form-field>
-  <input formContolName="email" matinput placeholder="Email" >
-</mat-form-field>
-<mat-form-field>
-    <input formContolName="mobile" matinput placeholder="First Name" >
-  </mat-form-field>
-<mat-form-field>
-  <input formContolName="city" matinput placeholder="City" >
-</mat-form-field>
+        </mat-form-field>
+        <mat-form-field>
+          <input formControlName="email" matInput placeholder="Email">
 
-</mat-grid-tile>
-<mat-grid-tile>
+        </mat-form-field>
+        <mat-form-field>
+          <input formControlName="mobile" matInput placeholder="Mobile*">
 
-</mat-grid-tile>
+        </mat-form-field>
+        <mat-form-field>
+          <input formControlName="city" matInput placeholder="City">
+        </mat-form-field>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
 
+    </mat-grid-tile>
   </mat-grid-list>
-
 </form>

@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // for forms
 
- import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 // for routing
 import { AppRoutingModule } from './app-routing.module';
@@ -19,6 +19,7 @@ import {environment} from '../environments/environment';
 
 // for service
 import { EmployeeService } from './shared/employee.service';
+
 
 @NgModule({
   declarations: [
